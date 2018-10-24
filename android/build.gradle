@@ -11,7 +11,7 @@ gradle.projectsEvaluated {
 }
 
 android {
-    buildToolsVersion safeExtGet('buildToolsVersion', '26.0.3')
+    buildToolsVersion safeExtGet('buildToolsVersion', '27.0.3')
     compileSdkVersion safeExtGet('compileSdkVersion', 26)
 
     defaultConfig {
@@ -23,6 +23,6 @@ android {
 }
 
 dependencies {
-    compile 'com.bugsnag:bugsnag-android:4.8.2'
-    compile 'com.facebook.react:react-native:+'
+    api 'com.bugsnag:bugsnag-android:4.8.2'
+    api 'com.facebook.react:react-native:+'
 }
